@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "5f05a306b8e32cad8466",
+  "position": {
+    "x": 959.15509590857846,
+    "y": 275.70450407571025,
+    "z": 0,
+    "height": 300,
+    "width": 300
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_EAP_EVNT_SRVC_TYPE"
+                    }
+                  },
+                  "Property": "EAP Management Service Group Code"
+                }
+              },
+              "queryRef": "DIM_EAP_EVNT_SRVC_TYPE.EAP Management Service Group Code",
+              "nativeQueryRef": "EAP Management Service Group Code"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f45737b50ca7434dc9c9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_EAP_EVNT_SRVC_TYPE"
+              }
+            },
+            "Property": "EAP Management Service Group Code"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
